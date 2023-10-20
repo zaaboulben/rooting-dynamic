@@ -5,7 +5,7 @@ import React from 'react';
 
 import { useState } from 'react';
 
-export default function Page({params}: {params: {slug: string[]}}) {
+export default function Page({ params }: { params: { slug: string[] } }) {
     console.log(params);
 
     const [currentSlug, setCurrentSlug] = useState(params.slug.join('/'));
@@ -22,21 +22,22 @@ export default function Page({params}: {params: {slug: string[]}}) {
         router.replace(`/${newSlug}`);
     }
 
-    return(
-        <main className=' flex flex-col  items-center  flex-wrap place-content-evenly	 content-around h-96'>   
+    return (
+        <main className=' flex flex-col items-center content-around min-h-screen p-3  w-full'>
             <div>my link : {currentSlug}</div>
             {
                 params.slug.map((slug, index) => (
-                    <Link className='flex flex-col ' 
-                    key={index} href={`/${slug}`}>{slug}</Link>
+                    <Link className='flex flex-col '
+                        key={index} href={`/${slug}`}>{slug}</Link>
                 ))
             }
-            <button className='bg-slate-500 rounded text-black' onClick={goBack}>precedent</button>
-            <button className='bg-slate-500 rounded text-black' onClick={concatenateSlug}>substract one slug</button>
+            <button className=' bg-white rounded-2xl shadow-md  shadow-grey-600 mt-10 flex items-center justify-center
+                  text-gray-700  h-7 w-72 p-2 text-center' onClick={goBack}>precedent</button>
+            <button className=' bg-white rounded-2xl shadow-md  shadow-grey-600 mt-10 flex items-center justify-center
+                  text-gray-700  h-7 w-72 p-2 text-center' onClick={concatenateSlug}>substract one slug</button>
         </main>
     )
 }
-            
 
-       
-    
+
+
