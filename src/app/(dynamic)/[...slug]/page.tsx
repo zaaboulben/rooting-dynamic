@@ -23,7 +23,7 @@ export default function Page({ params }: { params: { slug: string[] } }) {
     }
 
     return (
-        <main className=' flex flex-col items-center content-around min-h-screen p-3  w-full'>
+        <div className='flex flex-col  items-center flex-wrap   place-content-start	 content-around min-h-screen w-5/6  mt-32' >
             <div>my link : {currentSlug}</div>
             {
                 params.slug.map((slug, index) => (
@@ -35,8 +35,8 @@ export default function Page({ params }: { params: { slug: string[] } }) {
                   text-gray-700  h-7 w-72 p-2 text-center' onClick={goBack}>precedent</button>
             <button className=' bg-white rounded-2xl shadow-md  shadow-grey-600 mt-10 flex items-center justify-center
                   text-gray-700  h-7 w-72 p-2 text-center' onClick={concatenateSlug}>substract one slug</button>
-        </main>
-    )
+        </div>
+       )
 }
 
 

@@ -36,14 +36,13 @@ export default function DynamicForm() {
         return `${link}`;
     };
 
-    return (
-        <main className="flex flex-col items-center content-around min-h-screen p-3  w-full ">
+    return (<>
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className=" flex flex-col  items-center  flex-wrap place-content-evenly	 content-around h-96 w-5/6  "
+                className=" flex flex-col  items-center flex-wrap   place-content-evenly	 content-around h-96 w-5/6  "
             >
                 {fields.map((field, index: number) => (
-                    <div className="flex  items-center content-around  w-5/5  " key={field.id}>
+                    <div className="flex  items-center content-around  w-5/5   " key={field.id}>
                         <input
                             className="text-black rounded-2xl h-8  text-center static  "
                             key={field.id}
@@ -57,10 +56,11 @@ export default function DynamicForm() {
                         )}
                     </div>
                 ))}
+                
                 <button
                     type="button"
                     className="   bg-white rounded-2xl shadow-md  shadow-grey-600 
-                    text-gray-700  h-7 p-2 text-center flex items-center justify-center "
+                    text-gray-700  h-7 p-2 text-center flex items-center justify-center pointer-events-auto  "
                     onClick={() => {
                         append("" + fields.length);
                         console.log(fields.length);
@@ -77,8 +77,8 @@ export default function DynamicForm() {
                     Envoyer
                 </button>
             </form>
-        </main>
-    );
+        
+        </>   );
 }
 
 // export const sendsingleton = (data: FormSchema) => {
