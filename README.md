@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dinamic-Route-Next.js-Zod-React-Hook-Form
+
+**Next.js Dynamic Routes with Zod and React Hook Form**
+
+## Description
+
+A small exercise project aimed at helping you learn and understand how to implement dynamic routes in a Next.js application using the Zod validation library and React Hook Form for form handling.
+
+## Table of Contents
+
+- [Dinamic-Route-Next.js-Zod-React-Hook-Form](#dinamic-route-nextjs-zod-react-hook-form)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
 
 ## Getting Started
+npm install
+or
+yarn install
+### Prerequisites
 
-First, run the development server:
+Before you begin, ensure you have met the following requirements:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Node.js**: This project relies on Node.js for running the development server and installing dependencies. You can download it [here](https://nodejs.org/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To get this project up and running, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/yourusername/your-project.git
 
-To learn more about Next.js, take a look at the following resources:
+   
+2. Navigate to the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    cd Dynamic-Route-Next.js-Zod-React-Hook-Form
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Install the dependencies:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    npm install
+    or
+    yarn install
+    
